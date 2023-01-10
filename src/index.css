@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Philosopher&display=swap");
+
+.card {
+  border: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.loghov {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+.loghov:before,
+.loghov:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.loghov:before {
+  border-top: 2px solid #c47135;
+  left: 0px;
+  top: -5px;
+}
+.loghov:after {
+  border-bottom: 2px solid #c47135;
+  bottom: -5px;
+  right: 0px;
+}
+.loghov:hover {
+  background-color: #c47135;
+}
+.loghov:hover:before,
+.loghov:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.fontfam {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+}
+
+.grid {
+  transition: all 0.2s;
+}
+.grid:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
